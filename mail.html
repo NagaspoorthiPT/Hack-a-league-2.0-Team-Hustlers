@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<?php
+//get data from form  
+$name = $_POST['name'];
+$message= $_POST['message'];
+$number=$_POST['mobile'];
+
+$to = "thanushamcrc@.com";
+$subject = "Mail from GAT member";
+$txt ="Name = ". $name . "  \r\n Message =" . $message . "\r\n Mobile number=". $number;
+$headers = "From: noreply@yoursite.com" . "\r\n" .
+"CC: somebodyelse@example.com";
+if($number!=NULL){
+    mail($to,$subject,$txt,$headers);
+}
+//redirect
+header("Location:thankyou.html");
+?>
+</body>
+</html>

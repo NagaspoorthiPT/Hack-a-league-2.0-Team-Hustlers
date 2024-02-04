@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+        <title>Xerox and Printout</title>
+        <style>
+           #myvideo{
+                position: fixed;
+                right: 0;
+                bottom: 0;
+                min-width: 100%;
+                min-height: 100%;
+             } 
+             .back-video{
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    z-index: -1;
+                }  
+            body {
+              background-image: url('C:\Users\Hp\Downloads\tree-736885_1280 (4).jpg');
+            }
+        </style>
+         <video autoplay muted loop id="myvideo" class="back-video">
+          <source src="C:\hackathon24\production_id_4153410 (2160p).mp4"type="video/mp4"></video>
+      </video>
+      
+
+
+</html>
+<body>
+
+
+
+    <h1><center>Upload your Materials</center></h1>
+
+<br><br><br><br>
+    <form action="mail.html" method="post">
+      <input type="text"  name="name" placeholder="Yourname..">
+      <input type="text" name="mobile" placeholder="Your mobile number">
+      <label for="message">Message</label>
+      <textarea  name="message" placeholder="Number of copies:" style="height:50px"></textarea>
+      <input type="submit" value="Submit">
+    </form>
+    <br>
+    <br>
+
+    <form>
+        <label for="myfile"><b>Select Files(PDF/Word):</b></label>
+        <input type="file" multiple accept=".pdf,.duc,.doc,.dox" required><br>
+        <input type="submit">
+
+      
+            <div class="preview">
+              <p>No files currently selected for upload</p>
+            </div>
+            <div>
+              <button>Submit</button>
+            </div>
+          </form>
+
+
+
+
+
+    </form>
+</body>
